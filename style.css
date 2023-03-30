@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ececec;
+}
+
+h1 {
+  align-self: center;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.inner-container {
+  width: 300px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 10px #979797;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.newtask {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 2px solid #cccccc;
+  border-radius: 3.5px;
+}
+
+.addTask {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #60af4b;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.addTask:hover {
+  background-color: #2e5323;
+}
+
+.task {
+  background-color: #ebebeb;
+  height: 50px;
+  margin-bottom: 8px;
+  width: 250px;
+  height: 80px;
+  padding: 40px 15px;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  cursor: pointer;
+}
+
+.task span {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.task button {
+  color: white;
+  background-color: #e1433c;
+  width: 100px;
+  height: 28px;
+  font-size: 13px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked ~ #taskname,
+input[type="checkbox"]:checked ~ #delete {
+  text-decoration: line-through;
+  text-decoration-color: black;
+}
